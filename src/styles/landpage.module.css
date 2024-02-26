@@ -12,4 +12,26 @@
     .header{
         margin-left: 30%;
     }
+    .topcontent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        margin-left: 90%;
+        gap: 200px;
+    }
+    .newsletter {
+        width: 100px;
+    }
+
+    .form{
+        margin-left: 10%;
+    }
+
+  
+   
+
+   
+
+ 
 }

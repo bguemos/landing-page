@@ -11,7 +11,10 @@ import styles from '../styles/landpage.module.css';
 export default function Home() {
   return (
     <>
+  <div className={styles.headercontainer}>
   <Header/>
+  </div>
+
 
     <main className={styles.main} style={{display: 'flex', flexDirection: 'column'}}>
   
@@ -21,8 +24,8 @@ export default function Home() {
       <h2 className={styles.header} style={{width: '600px', fontSize: '20px', fontWeight: '500'}}>RescueRadar aims to link you with adoptable rescue dogs nearby. Recognizing the difficulty of finding the perfect dog to match your lifestyle, we provide a brief survey to tailor our suggestions to your preferences. Our platform not only presents the most suitable breed based on your responses but also enables you to explore all available adoptable dogs and additional matches.</h2>
       </div>
      
-      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: '5%'}}>
-      <div style={{
+      <div className={styles.topcontent} style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: '5%'}}>
+      <div className={styles.newsletter} style={{
               backgroundColor:'#C41C4C',
               height: '505px',
               width: '50%',
@@ -39,7 +42,7 @@ export default function Home() {
             alt="dog"
 
             />
-            <div style={{display: 'flex', flexDirection: 'column', gap: '25px'}}>
+            <div className={styles.form} style={{display: 'flex', flexDirection: 'column', gap: '25px'}}>
             <h2 style={{fontSize: '24px', fontFamily: 'outfit', fontWeight: '400', color: 'white'}}>Sign up for our <strong>newsletter</strong></h2>
             <div style={{display: 'flex', flexDirection: 'column'}}>
             <label style={{color: 'white', fontFamily: 'outfit'}}>Name:</label>
@@ -62,7 +65,7 @@ export default function Home() {
       </div>
 
 
-   <div style={{
+   <div className={styles.blackdog} style={{
     backgroundImage: "url('/marketing-icons/blackdog.png')",
     height: '600px',
     width: '400px',
@@ -76,7 +79,7 @@ export default function Home() {
    
      
       </div>
-      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent:'space-between', marginTop: '5%'}}>
+      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent:'space-between', marginTop: '5%', flexWrap: 'wrap'}}>
         <div style={{height: '527px', width: '420px', border: '1px solid lightgray' ,boxShadow: '8px 8px 12px rgba(0, 0, 0, 0.1)', borderRadius: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent:'center', padding: '3%'}}>
         <Spline style={{height: '300px', width: '600px'}}  scene="https://prod.spline.design/lmHCyI27FKY4ArrT/scene.splinecode" />
           <h2 style={{fontFamily: 'outfit', fontSize: '24px', fontWeight: '600'}}>Puppy Pal</h2>
@@ -101,7 +104,7 @@ export default function Home() {
       </div>
 
       </div>
-      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', height: '728px', width: '100%', border: '1px solid #1FCBFF', marginTop: '5%'}}>
+      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', height: '728px', width: '100%', border: '1px solid #1FCBFF', marginTop: '5%', flexWrap: 'wrap'}}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
         <h1 style={{ width:'400px',fontSize: '28px', fontWeight: '800'}}>Rescue Radar is Available for mobile and web! Look no further for your furever friend!</h1>
         <Spline style={{height: '300px'}} scene="https://prod.spline.design/SqLlHFLgWWocsQ1N/scene.splinecode" />

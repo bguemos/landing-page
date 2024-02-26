@@ -10,7 +10,7 @@ export default function Footer() {
         <>
 
         
-        <footer style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', height: '90px', backgroundColor:'#C41C4C'}}>
+        <footer className={styles.footercontainer} style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', height: '90px', backgroundColor:'#C41C4C'}}>
                 <div className={`flex items-center`}>
                 <Image
                     src='/marketing-icons/whitelogo.png'
