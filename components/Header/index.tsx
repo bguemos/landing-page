@@ -1,5 +1,6 @@
 import Image from "next/image"
 import LargeButton from "../button"
+import styles from './header.module.css'
 
 
 export default function Header() {
@@ -10,7 +11,7 @@ export default function Header() {
 
     
       <>
-            <header style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', height: '90px', borderBottom: '1px solid #C41C4C'}}>
+            <header className={styles.header} style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', height: '90px', borderBottom: '1px solid #C41C4C'}}>
                 <div className={`flex items-center`}>
                 <Image
                     src='/marketing-icons/logo.png'
